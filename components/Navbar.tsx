@@ -15,6 +15,7 @@ function NavBar() {
         height={100}
         className=" object-contain"
       />
+      <Image src="/printest.svg" alt="icon" width={30} height={30} />
 
       <div className="flex justify-center items-center gap-6 font-bold font-serif">
         {NavBarLinks.map((item) => (
