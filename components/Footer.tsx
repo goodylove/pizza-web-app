@@ -13,7 +13,11 @@ function Footer() {
             <div key={link.title} className="flex flex-col gap-2  font-serif">
               <h2 className="font-bold">{link.title}</h2>
               {link.links.map((_link) => (
-                <Link href={_link.url} className="text-gray-500">
+                <Link
+                  href={_link.url}
+                  className="text-gray-500"
+                  key={_link.title}
+                >
                   {_link.title}
                 </Link>
               ))}
