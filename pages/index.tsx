@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import { Footer, NavBar } from "@/components";
+import { Footer, NavBar, ProductCard } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,9 +12,8 @@ export default function Home() {
         <title>Pizza store</title>
         <meta name="description" content="your one stop shop for  pizza" />
       </Head>
-      <main>
-        <NavBar />
-        <Footer />
+      <main className="h-screen w-full">
+        <ProductCard />
       </main>
     </>
   );
