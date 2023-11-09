@@ -9,13 +9,12 @@ function NavBar() {
   return (
     <nav className="flex justify-between  items-center gap-28 px-10 py-4">
       <Image
-        src="https://res.cloudinary.com/pizza-web-app/image/upload/dpr_3.0/v1698917789/trhn4epreguzsyq66uc0.png"
+        src="/logo.png"
         alt="logo"
-        width={100}
-        height={100}
+        width={80}
+        height={80}
         className=" object-contain"
       />
-      <Image src="/printest.svg" alt="icon" width={30} height={30} />
 
       <div className="flex justify-center items-center gap-6 font-bold font-serif">
         {NavBarLinks.map((item) => (
