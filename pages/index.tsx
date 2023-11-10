@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="description" content="your one stop shop for  pizza" />
       </Head>
       <main className="h-screen w-full">
-        <ProductCard />
+        <NavBar />
       </main>
     </>
   );
