@@ -14,6 +14,8 @@ export default function Home() {
       </Head>
       <main className="h-screen w-full">
         <NavBar />
+        <Footer />
+        <ProductCard />
       </main>
     </>
   );
