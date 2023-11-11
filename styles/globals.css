@@ -2,12 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.c-icon {
-  --star-active: #fece3c;
-  --star-inactive: #6c6962;
-  fill: var(--star-inactive);
-}
-
-.c-icon.active {
-  fill: var(--star-active);
+.image__card:hover {
+  transform: rotate(360deg);
+  transition: ease-in-out;
 }

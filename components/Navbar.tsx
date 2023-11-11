@@ -7,26 +7,64 @@ import { FiSearch } from "react-icons/fi";
 import { BsCart2 } from "react-icons/bs";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { usePathname } from "next/navigation";
 import React from "react";
+import { text } from "stream/consumers";
 
 function NavBar() {
   const [toggle, setToggle] = React.useState(false);
+  const [scroll, setScroll] = React.useState(false);
+
+  const pathname = usePathname();
+
+  React.useEffect(() => {
+    const handleSroll = () => {
+      setScroll(window.scrollY === 0 ? false : true);
+    };
+    window.addEventListener("scroll", handleSroll);
+
+    return () => window.removeEventListener("scroll", handleSroll);
+  }, []);
 
   return (
-    <nav className="flex justify-between  items-center gap-28 md:px-10 py-4 px-3 cursor-pointer">
+    <nav
+      className={`flex justify-between  items-center gap-28 md:px-10  py-2 px-3 cursor-pointer  w-full ease-in-out transition-all  ${
+        scroll ? "fixed  top-0   z-50 bg-white" : ""
+      }`}
+    >
       <Image
-        src="/logo.png"
+        src="/logo (1).png"
         alt="logo"
         width={70}
         height={70}
-        className=" object-contain"
+        className={` object-contain ${
+          scroll ? "w-[50px]" : ""
+        } w-[30px] md:w-[60px]`}
         priority
       />
+      {scroll ? (
+        ""
+      ) : (
+        <Image
+          src="/header-img.png"
+          alt="header-logo"
+          priority
+          width={150}
+          height={150}
+          className=" ease-in-out transition-all md:flex hidden"
+        />
+      )}
 
       <div className="flex justify-center items-center gap-6 font-bold font-serif">
-        <div className=" gap-10 hidden md:flex">
+        <div className=" gap-7  hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex">
           {NavBarLinks.map((item) => (
-            <Link href={item.path} key={item.name}>
+            <Link
+              href={item.path}
+              key={item.name}
+              className={`${
+                pathname === item.path ? "text-red-600 " : ""
+              } text-[17px] font-bold hover:text-red-600`}
+            >
               {item.name}
             </Link>
           ))}

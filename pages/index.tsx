@@ -12,9 +12,7 @@ export default function Home() {
         <title>Pizza store</title>
         <meta name="description" content="your one stop shop for  pizza" />
       </Head>
-      <main className="h-screen w-full">
-        <NavBar />
-        <Footer />
+      <main className="h-screen w-full mt-36">
         <ProductCard />
       </main>
     </>

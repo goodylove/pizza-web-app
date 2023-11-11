@@ -12,7 +12,7 @@ export const NavBarLinks = [
   },
   {
     name: "Pages",
-    path: "/",
+    path: "/pages",
     active: false,
   },
   {
