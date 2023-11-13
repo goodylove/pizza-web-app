@@ -77,14 +77,16 @@ function NavBar() {
           </div>
         </div>
         <div className="md:hidden flex text-[40px]  transform ease-in-out">
-          {toggle ? (
-            <AiFillCloseCircle onClick={() => setToggle(false)} />
-          ) : (
+         
             <BiMenuAltLeft onClick={() => setToggle((prev) => !prev)} />
-          )}
+         
         </div>
       </div>
-      {toggle ? <MobileNav navLink={NavBarLinks} toggle={setToggle} /> : ""}
+      {toggle ? (
+        <MobileNav navLink={NavBarLinks} setoggle={setToggle} toggle={toggle} />
+      ) : (
+        ""
+      )}
     </nav>
   );
 }

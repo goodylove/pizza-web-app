@@ -5,14 +5,16 @@ import Link from "next/link";
 
 import { eachNavLinks, NavLinksProps } from "@/Types";
 
-function MobileNav({ navLink, toggle }: NavLinksProps) {
+function MobileNav({ navLink, toggle, setoggle }: NavLinksProps) {
   return (
     <div
-      className={`border-2 h-full fixed w-[300px] top-0 z-50 right-0 bg-white ease-in-out transition-transform`}
+      className={`border-2 h-full fixed  top-0 bg-white right-0  ${
+        toggle ? "mobile " : "close "
+      }`}
     >
       <div
-        className={`flex justify-end px-4 my-5 text-[40px] `}
-        onClick={() => toggle(false)}
+        className={`flex justify-end px-4 mt-5 text-[40px] `}
+        onClick={() => setoggle(false)}
       >
         <AiFillCloseCircle />
       </div>
@@ -20,8 +22,9 @@ function MobileNav({ navLink, toggle }: NavLinksProps) {
         {navLink?.map((navBarLinks: eachNavLinks) => (
           <Link
             href={navBarLinks.path}
+            key={navBarLinks.name}
             className="font-bold font-serif hover:text-red-600"
-            onClick={() => toggle(false)}
+            onClick={() => setoggle(false)}
           >
             {navBarLinks.name}
           </Link>

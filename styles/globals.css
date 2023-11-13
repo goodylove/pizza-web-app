@@ -6,3 +6,35 @@
   transform: rotate(360deg);
   transition: ease-in-out;
 }
+
+.mobile {
+  animation: slideIn 0.5s ease-in-out forwards; /* forwards to keep the final state */
+  width: 300px;
+
+  transition: 0.5s;
+}
+.close {
+  width: 0px;
+  transition: 0.5s;
+
+  animation: slide 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+}
