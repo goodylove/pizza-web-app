@@ -84,7 +84,7 @@ function NavBar() {
           )}
         </div>
       </div>
-      <MobileNav navLink={NavBarLinks} toggle={toggle} />
+      {toggle ? <MobileNav navLink={NavBarLinks} toggle={setToggle} /> : ""}
     </nav>
   );
 }

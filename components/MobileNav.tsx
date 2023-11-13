@@ -8,12 +8,19 @@ import { eachNavLinks, NavLinksProps } from "@/Types";
 function MobileNav({ navLink, toggle }: NavLinksProps) {
   return (
     <div className="border-2 h-full fixed w-[300px] top-0 z-50 right-0 bg-white ease-in-out transition-transform">
-      <div className="flex justify-end px-4 my-5">
+      <div
+        className={`flex justify-end px-4 my-5`}
+        onClick={() => toggle(false)}
+      >
         <AiFillCloseCircle />
       </div>
-      <div className=" flex flex-col gap-6 pl-4">
+      <div className=" flex flex-col gap-8 pl-4">
         {navLink?.map((navBarLinks: eachNavLinks) => (
-          <Link href={navBarLinks.path} className="font-bold font-serif">
+          <Link
+            href={navBarLinks.path}
+            className="font-bold font-serif hover:text-red-600"
+            onClick={() => toggle(false)}
+          >
             {navBarLinks.name}
           </Link>
         ))}

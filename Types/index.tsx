@@ -7,7 +7,7 @@ export interface CustomButtonProps {
 
 export interface NavLinksProps {
   navLink: eachNavLinks[];
-  toggle: boolean;
+  toggle: (value: boolean) => void;
 }
 export interface eachNavLinks {
   name: string;
