@@ -9,7 +9,6 @@ import { BiMenuAltLeft } from "react-icons/bi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { usePathname } from "next/navigation";
 import React from "react";
-import { text } from "stream/consumers";
 
 function NavBar() {
   const [toggle, setToggle] = React.useState(false);
