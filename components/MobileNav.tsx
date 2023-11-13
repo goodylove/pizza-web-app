@@ -7,9 +7,11 @@ import { eachNavLinks, NavLinksProps } from "@/Types";
 
 function MobileNav({ navLink, toggle }: NavLinksProps) {
   return (
-    <div className="border-2 h-full fixed w-[300px] top-0 z-50 right-0 bg-white ease-in-out transition-transform">
+    <div
+      className={`border-2 h-full fixed w-[300px] top-0 z-50 right-0 bg-white ease-in-out transition-transform`}
+    >
       <div
-        className={`flex justify-end px-4 my-5`}
+        className={`flex justify-end px-4 my-5 text-[40px] `}
         onClick={() => toggle(false)}
       >
         <AiFillCloseCircle />
