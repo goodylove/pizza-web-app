@@ -9,6 +9,7 @@ import { BiMenuAltLeft } from "react-icons/bi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { MobileNav } from ".";
 
 function NavBar() {
   const [toggle, setToggle] = React.useState(false);
@@ -83,6 +84,7 @@ function NavBar() {
           )}
         </div>
       </div>
+      <MobileNav navLink={NavBarLinks} toggle={toggle} />
     </nav>
   );
 }

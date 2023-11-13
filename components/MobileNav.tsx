@@ -1,13 +1,23 @@
-import { NavBarLinks } from "@/constants";
-import Link from "next/link";
-import React from "react";
+import { AiFillCloseCircle } from "react-icons/ai";
 
-function MobileNav() {
+import React from "react";
+import Link from "next/link";
+
+import { eachNavLinks, NavLinksProps } from "@/Types";
+
+function MobileNav({ navLink, toggle }: NavLinksProps) {
   return (
-    <div className="border-2">
-      {NavBarLinks.map((navBarLinks) => (
-        <Link href={navBarLinks.path}>{navBarLinks.name}</Link>
-      ))}
+    <div className="border-2 h-full fixed w-[300px] top-0 z-50 right-0 bg-white ease-in-out transition-transform">
+      <div className="flex justify-end px-4 my-5">
+        <AiFillCloseCircle />
+      </div>
+      <div className=" flex flex-col gap-6 pl-4">
+        {navLink?.map((navBarLinks: eachNavLinks) => (
+          <Link href={navBarLinks.path} className="font-bold font-serif">
+            {navBarLinks.name}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
