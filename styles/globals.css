@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  transition: 0.3s ease-in-out;
+}
 .image__card:hover {
   transform: rotate(360deg);
   transition: ease-in-out;

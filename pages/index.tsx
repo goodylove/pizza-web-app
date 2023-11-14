@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import { Footer, MobileNav, NavBar, ProductCard } from "@/components";
+import { Footer, Hero, MobileNav, NavBar, ProductCard } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +12,9 @@ export default function Home() {
         <title>Pizza store</title>
         <meta name="description" content="your one stop shop for  pizza" />
       </Head>
-      <main className="h-screen w-full mt-36"></main>
+      <main className="h-screen w-full mt-10">
+        <Hero />
+      </main>
     </>
   );
 }

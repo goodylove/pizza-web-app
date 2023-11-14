@@ -3,4 +3,5 @@ import Footer from "./Footer";
 import CustomButton from "./CustomButton";
 import ProductCard from "./ProductCard";
 import MobileNav from "./MobileNav";
-export { NavBar, Footer, CustomButton, ProductCard, MobileNav };
+import Hero from "./Hero";
+export { NavBar, Footer, CustomButton, ProductCard, MobileNav, Hero };
