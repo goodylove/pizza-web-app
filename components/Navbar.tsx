@@ -28,7 +28,7 @@ function NavBar() {
 
   return (
     <nav
-      className={`flex justify-between  items-center gap-28 md:px-10  py-2 px-3 cursor-pointer  w-full ease-in-out transition-all  ${
+      className={`flex justify-between z-[1000] items-center gap-28 md:px-10  py-2 px-3 cursor-pointer  w-full ease-in-out transition-all  ${
         scroll ? "fixed  top-0   z-50 bg-white" : ""
       }`}
     >
@@ -77,9 +77,7 @@ function NavBar() {
           </div>
         </div>
         <div className="md:hidden flex text-[40px]  transform ease-in-out">
-         
-            <BiMenuAltLeft onClick={() => setToggle((prev) => !prev)} />
-         
+          <BiMenuAltLeft onClick={() => setToggle((prev) => !prev)} />
         </div>
       </div>
       {toggle ? (
