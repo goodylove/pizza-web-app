@@ -5,6 +5,9 @@ import ProductCard from "./ProductCard";
 import MobileNav from "./MobileNav";
 import Hero from "./Hero";
 import Dailyfresh from "./dailyfresh";
+import BrowserMenu from "./BrowserMenu";
+import Subtitle from "./Subtitle";
+import OurStrength from "./ourStrength";
 export {
   NavBar,
   Footer,
@@ -13,4 +16,7 @@ export {
   MobileNav,
   Hero,
   Dailyfresh,
+  BrowserMenu,
+  Subtitle,
+  OurStrength,
 };

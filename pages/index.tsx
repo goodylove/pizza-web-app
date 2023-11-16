@@ -2,11 +2,13 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import {
+  BrowserMenu,
   Dailyfresh,
   Footer,
   Hero,
   MobileNav,
   NavBar,
+  OurStrength,
   ProductCard,
 } from "@/components";
 
@@ -22,6 +24,8 @@ export default function Home() {
       <main className="">
         <Hero />
         <Dailyfresh />
+        <BrowserMenu />
+        <OurStrength />
       </main>
     </>
   );

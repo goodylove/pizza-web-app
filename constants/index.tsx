@@ -60,13 +60,28 @@ export const FooterLinks = [
       { title: "Lagel", url: "", color: "blue" },
     ],
   },
-  // {
-  //   title: "SOCIAL MEDIA",
-  //   links: [
-  //     { title: "Facebook", url: "/facebook.svg", color: "#3A599C" },
-  //     { title: "pinterest", url: "/printest.svg", color: "#C82424" },
-  //     { title: "Twitter", url: "/twitter.svg", color: "#29ACE4" },
-  //     { title: "Instagram", url: "/instagram.svg", color: "#E4453F" },
-  //   ],
-  // },
+];
+
+export const ourStrengthDetils = [
+  {
+    title: "All kinds of Foods",
+    text: "Lorem Ipsum is simply dummy text of the printing and type setting industry",
+    img: "/all-kinds-of-foods.png",
+  },
+
+  {
+    title: "Fresh Foods",
+    text: "Lorem Ipsum is simply dummy text of the printing and type setting industry",
+    img: "/fresh-foods.png",
+  },
+  {
+    title: "Best Taste",
+    text: "Lorem Ipsum is simply dummy text of the printing and type setting industry",
+    img: "/best-taste.png",
+  },
+  {
+    title: "On Time Delivery",
+    text: "Lorem Ipsum is simply dummy text of the printing and type setting industry",
+    img: "/on-time-delivery.png",
+  },
 ];

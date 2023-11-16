@@ -15,3 +15,6 @@ export interface eachNavLinks {
   path: string;
   active: boolean;
 }
+export type SubTitleProps = {
+  title: string;
+};
