@@ -85,3 +85,27 @@ export const ourStrengthDetils = [
     img: "/on-time-delivery.png",
   },
 ];
+
+export const ClientsDetails = [
+  {
+    img: "/clients-1.png",
+    name: "john doe",
+    text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
+  },
+  {
+    img: "/clients-2.png",
+    name: "Takar Bowa",
+    text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
+  },
+  {
+    img: "/clients-3.png",
+    name: "Alex saanu",
+    text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
+  },
+
+  {
+    img: "/clients-4.png",
+    name: "jona loaner",
+    text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
+  },
+];

@@ -8,6 +8,7 @@ import Dailyfresh from "./dailyfresh";
 import BrowserMenu from "./BrowserMenu";
 import Subtitle from "./Subtitle";
 import OurStrength from "./ourStrength";
+import ClientCard from "./clientCard";
 export {
   NavBar,
   Footer,
@@ -19,4 +20,5 @@ export {
   BrowserMenu,
   Subtitle,
   OurStrength,
+  ClientCard,
 };

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import {
   BrowserMenu,
+  ClientCard,
   Dailyfresh,
   Footer,
   Hero,
@@ -26,6 +27,7 @@ export default function Home() {
         <Dailyfresh />
         <BrowserMenu />
         <OurStrength />
+        <ClientCard />
       </main>
     </>
   );
