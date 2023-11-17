@@ -8,7 +8,9 @@ function OurStrength() {
     <section className="flex justify-center w-full p-5 bg-[#FFFAEE] my-6 relative">
       <div className="p-5 ">
         <Subtitle title="Our Strength" />
-        <p className="my-6 text-[40px] font-[700]">Why We Are The Best?</p>
+        <p className="my-6 md:text-[40px]  text-[25px] font-[700]">
+          Why We Are The Best?
+        </p>
 
         <Image
           src="/strength-vacter.png"
@@ -16,7 +18,7 @@ function OurStrength() {
           width={300}
           height={300}
           priority
-          className="object-contain absolute right-1 top-10"
+          className="object-contain absolute right-1 top-10 hidden md:flex"
         />
 
         <div className=" flex gap-5  flex-col md:flex-row sm:flex-col lg:flex-row p-5  ">

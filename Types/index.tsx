@@ -17,4 +17,12 @@ export interface eachNavLinks {
 }
 export type SubTitleProps = {
   title: string;
+  left?: string;
+};
+export type CLientCardProps = {
+  client: {
+    img: string;
+    name: string;
+    text: string;
+  };
 };

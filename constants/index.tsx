@@ -7,7 +7,7 @@ export const NavBarLinks = [
 
   {
     name: "Products",
-    path: "/Products",
+    path: "/product",
     active: false,
   },
   {
@@ -88,23 +88,23 @@ export const ourStrengthDetils = [
 
 export const ClientsDetails = [
   {
-    img: "/clients-1.png",
+    img: "/client-1.jpg",
     name: "john doe",
     text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
   },
   {
-    img: "/clients-2.png",
+    img: "/client-2.jpg",
     name: "Takar Bowa",
     text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
   },
   {
-    img: "/clients-3.png",
+    img: "/client-3.jpg",
     name: "Alex saanu",
     text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
   },
 
   {
-    img: "/clients-4.png",
+    img: "/client-4.jpg",
     name: "jona loaner",
     text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
   },

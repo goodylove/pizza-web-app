@@ -3,7 +3,7 @@ import React from "react";
 
 function Dailyfresh() {
   return (
-    <div className="flex  gap-20 items-center  my-7 ">
+    <div className="flex  gap-20 items-center  my-7 flex-col-reverse md:flex-row ">
       <Image
         src="/daily-fresh.png"
         alt="dailyfresh"

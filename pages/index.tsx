@@ -4,6 +4,7 @@ import Head from "next/head";
 import {
   BrowserMenu,
   ClientCard,
+  ClientTestimony,
   Dailyfresh,
   Footer,
   Hero,
@@ -27,7 +28,7 @@ export default function Home() {
         <Dailyfresh />
         <BrowserMenu />
         <OurStrength />
-        <ClientCard />
+        <ClientTestimony />
       </main>
     </>
   );

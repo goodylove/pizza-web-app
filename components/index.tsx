@@ -9,6 +9,7 @@ import BrowserMenu from "./BrowserMenu";
 import Subtitle from "./Subtitle";
 import OurStrength from "./ourStrength";
 import ClientCard from "./clientCard";
+import ClientTestimony from "./ClientTestimony";
 export {
   NavBar,
   Footer,
@@ -21,4 +22,5 @@ export {
   Subtitle,
   OurStrength,
   ClientCard,
+  ClientTestimony,
 };
