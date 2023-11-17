@@ -9,7 +9,7 @@ function Dailyfresh() {
         alt="dailyfresh"
         width={400}
         height={400}
-        className="object-contain"
+        className="object-contain w-[200px] md:w-[400px]"
       />
       <div>
         <h2 className="text-[30px] font-semibold max-w-[230px]">

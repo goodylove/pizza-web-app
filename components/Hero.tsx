@@ -7,7 +7,7 @@ import Image from "next/image";
 function Hero() {
   return (
     <section className="flex   flex-col md:flex-row items-start justify-between overflow-hidden h-full w-full  ">
-      <div className="pl-6">
+      <div className="pl-6 my-6">
         <h3 className=" md:text-[4rem] font-[700] max-w-[450px] leading-[69.90px] text-[3rem]">
           Handmade, With an Extra Pinch of{" "}
           <span className="text-red-500">Love</span>
@@ -32,7 +32,7 @@ function Hero() {
         className="md:hidden flex ml-10"
       />
 
-      <div className="relative md:right-[-250px] hidden md:flex">
+      <div className="relative md:right-[-250px] hidden md:flex mt-10 md:mt-0">
         <Image
           src="/banner-img.png"
           alt="banner-img"

@@ -13,7 +13,7 @@ function ClientTestimony() {
         Client Testimonials
       </p>
 
-      <div className="grid  md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3">
+      <div className="grid  md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3  justify-items-center">
         {ClientsDetails.map((client) => (
           <div className="" key={client.name}>
             <ClientCard client={client} />
