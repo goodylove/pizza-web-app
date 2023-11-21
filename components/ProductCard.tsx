@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CustomButton } from ".";
 import { BsCart2 } from "react-icons/bs";
 import { ProductProps, ProuctDetailsProps } from "@/Types";
+import Link from "next/link";
 
 function ProductCard({ data }: ProuctDetailsProps) {
   return (
@@ -37,11 +38,13 @@ function ProductCard({ data }: ProuctDetailsProps) {
         <p className="text-gray-500 text-[14px] my-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <CustomButton
-          className="bg-[#F9B307] text-white flex items-center text-center justify-center gap-2 p-2 rounded-2xl mt-3 w-[150px]"
-          title="Order now"
-          icon={<BsCart2 />}
-        />
+        <Link href={`/singleProductPage/${data.id}`}>
+          <CustomButton
+            className="bg-[#F9B307] text-white flex items-center text-center justify-center gap-2 p-2 rounded-2xl mt-3 w-[150px]"
+            title="Order now"
+            icon={<BsCart2 />}
+          />
+        </Link>
       </div>
     </div>
   );

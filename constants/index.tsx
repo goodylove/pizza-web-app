@@ -115,38 +115,45 @@ export const productDetails = [
     name: "new buger",
     price: 209,
     img: "/buger.jpg",
+    id: 1,
   },
   {
     name: "new piza",
     price: 109,
     img: "/pizza2.png",
+    id: 2,
   },
   {
     name: "buger",
     price: 299,
     img: "/buger2.jpg",
+    id: 3,
   },
 
   {
     name: "pepperoni",
     price: 299,
     img: "/pizza4.png",
+    id: 4,
   },
   {
     name: "oninon pizza",
     price: 29,
     img: "/pi.jpg",
+    id: 5,
   },
 
   {
     name: "pepper pizza",
     price: 49,
     img: "/pizza3.png",
+    id: 6,
   },
 
   {
     name: "spicy pizza",
     price: 49,
     img: "/pizza4.png",
+    id: 7,
   },
 ];

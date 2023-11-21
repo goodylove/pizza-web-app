@@ -31,6 +31,7 @@ export type ProductProps = {
   name: string;
   price: number;
   img: string;
+  id: number;
 };
 
 export type ProuctDetailsProps = {
