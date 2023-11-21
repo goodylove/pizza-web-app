@@ -109,3 +109,44 @@ export const ClientsDetails = [
     text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
   },
 ];
+
+export const productDetails = [
+  {
+    name: "new buger",
+    price: 209,
+    img: "/buger.jpg",
+  },
+  {
+    name: "new piza",
+    price: 109,
+    img: "/pizza2.png",
+  },
+  {
+    name: "buger",
+    price: 299,
+    img: "/buger2.jpg",
+  },
+
+  {
+    name: "pepperoni",
+    price: 299,
+    img: "/pizza4.png",
+  },
+  {
+    name: "oninon pizza",
+    price: 29,
+    img: "/pi.jpg",
+  },
+
+  {
+    name: "pepper pizza",
+    price: 49,
+    img: "/pizza3.png",
+  },
+
+  {
+    name: "spicy pizza",
+    price: 49,
+    img: "/pizza4.png",
+  },
+];

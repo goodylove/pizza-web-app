@@ -1,5 +1,6 @@
 import React from "react";
 import { ProductCard, Subtitle } from ".";
+import { productDetails } from "@/constants";
 
 function BrowserMenu() {
   return (
@@ -10,8 +11,8 @@ function BrowserMenu() {
       </p>
 
       <div className="grid lg:grid-cols-4 md:grid-cols-3   grid-cols-1 justify-items-center  gap-5 ">
-        {Array.from({ length: 8 }, (_, i) => i + 1).map((_, i) => (
-          <ProductCard key={i} />
+        {productDetails.map((item) => (
+          <ProductCard key={item.name} data={item} />
         ))}
       </div>
     </section>

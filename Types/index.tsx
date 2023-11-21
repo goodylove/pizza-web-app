@@ -26,3 +26,13 @@ export type CLientCardProps = {
     text: string;
   };
 };
+
+export type ProductProps = {
+  name: string;
+  price: number;
+  img: string;
+};
+
+export type ProuctDetailsProps = {
+  data: ProductProps;
+};

@@ -2,15 +2,16 @@ import React from "react";
 import Image from "next/image";
 import { CustomButton } from ".";
 import { BsCart2 } from "react-icons/bs";
+import { ProductProps, ProuctDetailsProps } from "@/Types";
 
-function ProductCard() {
+function ProductCard({ data }: ProuctDetailsProps) {
   return (
     <div className="w-[300px] max-h-[350px] flex flex-col border-2  mt-10 mx-10 rounded-lg shadow px-2 py-5 items-center">
       <div className="w-[170px] h-[200px] flex justify-center items-center">
         <Image
-          src="/pizza2.png"
+          src={data.img}
           width={70}
-          height={100}
+          height={70}
           alt="pizzaName"
           priority
           className=" w-full object-cover transition-transform transform hover:rotate-45  cursor-pointer"
@@ -18,8 +19,8 @@ function ProductCard() {
       </div>
       <div className="w-full  ">
         <div className="flex justify-between font-bold my-1 ">
-          <span>New Pizza</span>
-          <span className="text-red-400">$89.00</span>
+          <span>{data.name}</span>
+          <span className="text-red-400">${data.price}</span>
         </div>
         <div className="flex">
           {Array.from({ length: 5 }, (_, i) => i + 1).map((_, i) => (
