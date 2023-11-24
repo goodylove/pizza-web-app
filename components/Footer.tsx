@@ -6,7 +6,7 @@ import { CustomButton } from ".";
 
 function Footer() {
   return (
-    <footer className="flex justify-center w-full bg-[#FFFAEE] py-5 bottom-0 ">
+    <footer className="flex justify-center w-full bg-[#FFFAEE] py-5 bottom-0  ">
       <div className="flex w-[95%] justify-around flex-col gap-4 md:flex-row">
         <div className="flex gap-10  pl-5 flex-col  justify-between w-[60%] md:flex-row">
           {FooterLinks.map((link) => (
@@ -30,7 +30,7 @@ function Footer() {
           <div className="flex gap-5">
             <Link
               href=""
-              className="bg-[#4154A2] w-9 h-9 flex justify-center items-center text-white"
+              className="bg-[#4154A2] w-9 h-9 flex justify-center items-center text-white rounded"
             >
               <Image
                 src="/facebook.svg"
@@ -43,7 +43,7 @@ function Footer() {
 
             <Link
               href=""
-              className="bg-[#CE202A] w-9 h-9 flex justify-center items-center text-white"
+              className="bg-[#CE202A] w-9 h-9 flex justify-center items-center text-white rounded"
             >
               <Image
                 src="/printest.svg"
@@ -55,14 +55,14 @@ function Footer() {
 
             <Link
               href=""
-              className={` w-9 h-9 flex justify-center items-center text-white bg-[#2DABDD]`}
+              className={` w-9 h-9 flex justify-center items-center text-white rounded bg-[#2DABDD]`}
             >
               <Image src="/twitter.svg" alt="twitter" width={20} height={20} />
             </Link>
 
             <Link
               href=""
-              className="bg-[#D84D36] w-9 h-9 flex justify-center items-center text-white"
+              className="bg-[#D84D36] w-9 h-9 flex justify-center items-center text-white rounded"
             >
               <Image
                 src="instagram.svg"
@@ -77,7 +77,7 @@ function Footer() {
           </p>
           <CustomButton
             title="Sign up"
-            className="bg-[#FCB400] text-white rounded-2xl p-[5px] mt-3 text-[13px] w-20 h-8"
+            className="bg-[#FCB400] text-white rounded-2xl p-[5px] mt-3 text-[13px] w-20 h-8 "
           />
         </div>
       </div>

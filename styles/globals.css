@@ -2,19 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  transition: 0.3s ease-in-out;
+}
+.image__card:hover {
+  transform: rotate(360deg);
+  transition: ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.mobile {
+  animation: slideIn 0.5s ease-in-out forwards; /* forwards to keep the final state */
+  width: 300px;
+
+  transition: 0.5s;
+}
+.close {
+  width: 0px;
+  transition: 0.5s;
+
+  animation: slide 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-body {
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
 }

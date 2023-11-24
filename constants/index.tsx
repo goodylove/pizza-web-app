@@ -7,12 +7,12 @@ export const NavBarLinks = [
 
   {
     name: "Products",
-    path: "/Products",
+    path: "/product",
     active: false,
   },
   {
     name: "Pages",
-    path: "/",
+    path: "/pages",
     active: false,
   },
   {
@@ -60,13 +60,100 @@ export const FooterLinks = [
       { title: "Lagel", url: "", color: "blue" },
     ],
   },
-  // {
-  //   title: "SOCIAL MEDIA",
-  //   links: [
-  //     { title: "Facebook", url: "/facebook.svg", color: "#3A599C" },
-  //     { title: "pinterest", url: "/printest.svg", color: "#C82424" },
-  //     { title: "Twitter", url: "/twitter.svg", color: "#29ACE4" },
-  //     { title: "Instagram", url: "/instagram.svg", color: "#E4453F" },
-  //   ],
-  // },
+];
+
+export const ourStrengthDetils = [
+  {
+    title: "All kinds of Foods",
+    text: "Lorem Ipsum is simply dummy text of the printing and type setting industry",
+    img: "/all-kinds-of-foods.png",
+  },
+
+  {
+    title: "Fresh Foods",
+    text: "Lorem Ipsum is simply dummy text of the printing and type setting industry",
+    img: "/fresh-foods.png",
+  },
+  {
+    title: "Best Taste",
+    text: "Lorem Ipsum is simply dummy text of the printing and type setting industry",
+    img: "/best-taste.png",
+  },
+  {
+    title: "On Time Delivery",
+    text: "Lorem Ipsum is simply dummy text of the printing and type setting industry",
+    img: "/on-time-delivery.png",
+  },
+];
+
+export const ClientsDetails = [
+  {
+    img: "/client-1.jpg",
+    name: "john doe",
+    text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
+  },
+  {
+    img: "/client-2.jpg",
+    name: "Takar Bowa",
+    text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
+  },
+  {
+    img: "/client-3.jpg",
+    name: "Alex saanu",
+    text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
+  },
+
+  {
+    img: "/client-4.jpg",
+    name: "jona loaner",
+    text: "Lorem ipsum is simply dummy, text of the print book.it has suvrved not only five centuries but also the leap ",
+  },
+];
+
+export const productDetails = [
+  {
+    name: "new buger",
+    price: 209,
+    img: "/buger.jpg",
+    id: 1,
+  },
+  {
+    name: "new piza",
+    price: 109,
+    img: "/pizza2.png",
+    id: 2,
+  },
+  {
+    name: "buger",
+    price: 299,
+    img: "/buger2.jpg",
+    id: 3,
+  },
+
+  {
+    name: "pepperoni",
+    price: 299,
+    img: "/pizza4.png",
+    id: 4,
+  },
+  {
+    name: "oninon pizza",
+    price: 29,
+    img: "/pi.jpg",
+    id: 5,
+  },
+
+  {
+    name: "pepper pizza",
+    price: 49,
+    img: "/pizza3.png",
+    id: 6,
+  },
+
+  {
+    name: "spicy pizza",
+    price: 49,
+    img: "/pizza4.png",
+    id: 7,
+  },
 ];
