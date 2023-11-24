@@ -16,7 +16,7 @@ function Product() {
           />
           <CustomButton
             className="bg-[#F9B307] text-white flex items-center text-center text-xs justify-center gap-2 p-3 rounded-2xl mt-3  w-24"
-            title="Add Product"
+            title="Add Item"
           />
         </div>
         <div className="flex items-center gap-3 flex-col md:flex-row">

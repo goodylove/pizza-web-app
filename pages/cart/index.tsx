@@ -10,7 +10,7 @@ function CartPage() {
 
   return (
     <>
-      <div className="h-[70vh] z-0 flex items-start justify-center md:justify-start mt-24 gap-6 px-5 flex-col md:flex-row w-full ">
+      <div className="h-[70vh] z-0 flex items-start justify-center md:justify-start mt-24 gap-6 px-5 flex-col md:flex-row w-10/12 ">
         <CartTemplate />
         <div className="w-full justify-center flex">
           <div className="w-52 h-fit bg-gray-700 text-white text-center p-2">
