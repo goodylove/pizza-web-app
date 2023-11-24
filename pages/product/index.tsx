@@ -7,12 +7,16 @@ import { productDetails } from "@/constants";
 function Product() {
   return (
     <section className="w-full my-3 px-5">
-      <div className="flex justify-between px-5 w-full">
+      <div className="flex justify-between md:px-5 w-full items-center">
         <div className="">
           <CustomButton
-            className="bg-[#F9B307] text-white flex items-center text-center text-[14px] justify-center gap-2 p-3 rounded-2xl mt-3 w-[120px]"
+            className="bg-[#F9B307] text-white flex items-center text-center text-xs justify-center gap-2 p-3 rounded-2xl mt-3 w-24"
             title="Filter"
             icon={<BsCart2 />}
+          />
+          <CustomButton
+            className="bg-[#F9B307] text-white flex items-center text-center text-xs justify-center gap-2 p-3 rounded-2xl mt-3  w-24"
+            title="Add Product"
           />
         </div>
         <div className="flex items-center gap-3 flex-col md:flex-row">
@@ -24,7 +28,7 @@ function Product() {
           </select>
         </div>
       </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3   grid-cols-1 justify-items-center  gap-5 ">
+      <div className="grid lg:grid-cols-3 xl:grid-cols-4  md:grid-cols-3   grid-cols-1 justify-items-center  gap-5  ">
         {productDetails.map((item) => (
           <ProductCard key={item.name} data={item} />
         ))}

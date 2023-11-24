@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function ProductCard({ data }: ProuctDetailsProps) {
   return (
-    <div className="w-[300px] max-h-[350px] flex flex-col border-2  mt-10 mx-10 rounded-lg shadow px-2 py-5 items-center">
+    <div className=" w-[300px] h-[350px] flex flex-col border-2  mt-10 mx-10 rounded-lg shadow px-2 py-5 items-center">
       <div className="w-[170px] h-[200px] flex justify-center items-center">
         <Image
           src={data.img}
