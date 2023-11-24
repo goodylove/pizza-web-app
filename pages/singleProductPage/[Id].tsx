@@ -9,11 +9,10 @@ function SingleProduct() {
   let id = router.query;
 
   const eachProduct = productDetails.find((item) => item.id === Number(id.Id));
-  console.log(eachProduct, id.Id);
 
   return (
     <section className="h-screen w-full flex justify-center items-center">
-      <div className="flex justify-center gap-7 items-center flex-col md:flex-row">
+      <div className="flex justify-center gap-7 items-center flex-col md:flex-row space-x-10">
         <Image
           src={eachProduct ? eachProduct.img : ""}
           alt="order-pizza"
@@ -27,7 +26,30 @@ function SingleProduct() {
           <p className="text-sm">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </p>
-          <p className="text-sm">choose additional ingredient</p>
+          <div>
+            <p className="font-semibold">Choose pizza size</p>
+            <div className="flex gap-5 items-center space-x-7">
+              <div className="relative">
+                <Image src="/pizza-icon.png" alt="" width={20} height={20} />
+                <span className="bg-red-500 text-white absolute text-xs rounded-3xl px-1 top-[-6px] flex items-center  left-2  justify-center">
+                  small
+                </span>
+              </div>
+              <div className="relative">
+                <Image src="/pizza-icon.png" alt="" width={30} height={30} />
+                <span className="bg-red-500 text-white absolute text-xs rounded-3xl px-1 top-[-6px] flex items-center   left-3 justify-center">
+                  medium
+                </span>
+              </div>
+              <div className="relative">
+                <Image src="/pizza-icon.png" alt="" width={50} height={50} />
+                <span className="bg-red-500 text-white absolute text-xs rounded-3xl px-1 top-[-6px] flex items-center   justify-center left-8">
+                  large
+                </span>
+              </div>
+            </div>
+          </div>
+          <p className="text-sm font-semibold">choose additional ingredient</p>
           <div className="flex gap-1">
             <input type="checkbox" />
             <span>Sauce</span>

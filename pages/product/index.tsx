@@ -15,7 +15,7 @@ function Product() {
             icon={<BsCart2 />}
           />
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-col md:flex-row">
           <h2 className="font-[700]">Showing all Result</h2>
           <select name="" id="" className="border-2 p-1 rounded-md">
             <option value="pizza">Default sorting</option>

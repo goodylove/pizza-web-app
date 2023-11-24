@@ -70,12 +70,12 @@ function NavBar() {
           ))}
         </div>
         <FiSearch />
-        <div className="relative">
+        <Link href="/cart" className="relative">
           <BsCart2 className="text-blue-500 text-[25px]" />
           <div className="h-4 w-4 text-[10px] rounded-full bg-red-500 text-white flex  left-3 absolute top-[-2px] justify-center items-center">
             0
           </div>
-        </div>
+        </Link>
         <div className="md:hidden flex text-[40px]  transform ease-in-out">
           <BiMenuAltLeft onClick={() => setToggle((prev) => !prev)} />
         </div>
