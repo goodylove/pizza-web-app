@@ -6,7 +6,7 @@ import { CustomButton } from ".";
 
 function Footer() {
   return (
-    <footer className="flex justify-center w-full bg-[#FFFAEE] py-5 bottom-0 ">
+    <footer className="flex justify-center w-full bg-[#FFFAEE] py-5 bottom-0  ">
       <div className="flex w-[95%] justify-around flex-col gap-4 md:flex-row">
         <div className="flex gap-10  pl-5 flex-col  justify-between w-[60%] md:flex-row">
           {FooterLinks.map((link) => (

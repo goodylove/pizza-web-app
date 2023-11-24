@@ -2,6 +2,7 @@ import { CustomButton } from "@/components";
 import React from "react";
 import { BsCart2 } from "react-icons/bs";
 import ProductCard from "./../../components/ProductCard";
+import { productDetails } from "@/constants";
 
 function Product() {
   return (
@@ -24,8 +25,8 @@ function Product() {
         </div>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-3   grid-cols-1 justify-items-center  gap-5 ">
-        {Array.from({ length: 6 }, (_, i) => i + 1).map((_, i) => (
-          <ProductCard key={i} />
+        {productDetails.map((item) => (
+          <ProductCard key={item.name} data={item} />
         ))}
       </div>
     </section>
